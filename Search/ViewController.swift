@@ -215,6 +215,7 @@ class ResultsViewController: UITableViewController, UISearchControllerDelegate, 
         searchController.delegate = self
         searchController.searchBar.delegate = self
         searchController.searchBar.text = ""
+        searchController.searchBar.enablesReturnKeyAutomatically = false
         searchController.searchResultsUpdater = searchResultsController
         searchController.dimsBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
